@@ -8,8 +8,8 @@ void errQuote(char *);
  */
 int main(void)
 {
-char *quoteMsg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-errQuote(quoteMsg);
+char *qtMsg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+errQuote(qtMsg);
 return (1);
 }
 
@@ -20,6 +20,6 @@ return (1);
  */
 void errQuote(char *quote)
 {
-write(2 , quote , strlen(quote));
+write(2, quote, strlen(quote));
 }
 
