@@ -1,6 +1,6 @@
 #include<unistd.h>
 #include<string.h>
-void errQuote(char[]);
+void errQuote(char *);
 /**
  * main - Entry point
  * 
@@ -8,8 +8,8 @@ void errQuote(char[]);
  */
 int main(void)
 {
-char quoteMsg[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-errQuote(quoteMsg[]);
+char *quoteMsg="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+errQuote(quoteMsg);
 return (1);
 }
 
@@ -18,8 +18,8 @@ return (1);
  * @quote: operand containing error message
  *
  */
-void errQuote(char quote[])
+void errQuote(char *quote)
 {
-write(2,quote[],strlen(quote[]));
+write(2,quote,strlen(quote));
 }
 
