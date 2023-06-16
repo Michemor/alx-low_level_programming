@@ -1,0 +1,28 @@
+#include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: 0
+ */
+int main(void)
+{
+int out;
+int in;
+int inner;
+for(out = 48; out <= 57; out++)
+{
+for (in = 48; in <= out; in++)
+{
+for (inner = 48; inner <= in; inner++)
+{
+putchar(out);
+putchar(in);
+putchar(inner);
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+return (0);
+}
