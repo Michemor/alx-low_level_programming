@@ -7,9 +7,9 @@
 int main(void)
 {
 int count = 0;
-while (count <= 10)
+while (count < 10)
 {
-printf("%d",count);
+printf("%d", count);
 count++;
 }
 printf("\n");
