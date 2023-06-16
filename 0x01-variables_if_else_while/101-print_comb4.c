@@ -9,11 +9,11 @@ int main(void)
 int out;
 int in;
 int inner;
-for(out = 48; out <= 57; out++)
+for (out = 48; out <= 57; out++)
 {
-for (in = 48; in <= out; in++)
+for (in = 49; in <= 56; in++)
 {
-for (inner = 48; inner <= in; inner++)
+for (inner = 50; inner <= 55; inner++)
 {
 putchar(out);
 putchar(in);
