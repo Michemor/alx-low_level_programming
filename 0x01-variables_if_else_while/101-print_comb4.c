@@ -25,7 +25,7 @@ putchar(out);
 putchar(in);
 putchar(inner);
 }
-if (out !=55 || in != 56 || inner != 57)
+if (out != 55 || in != 56 || inner != 57)
 {
 putchar(',');
 putchar(' ');
