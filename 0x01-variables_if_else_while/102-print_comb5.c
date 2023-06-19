@@ -13,7 +13,7 @@ for (in1 = 49; in1 <= 57; in1++)
 {
 for (out2 = 49; out2 <= 57; out2++)
 {
-for (in2 = 48; in2 <=57; in2++)
+for (in2 = 48; in2 <= 57; in2++)
 {
 if (in1 == in2 || out1 == out2)
 {
