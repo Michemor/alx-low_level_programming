@@ -10,8 +10,11 @@ int dig = 48;
 while (dig <= 57)
 {
 putchar(dig);
+if (dig != 57)
+{
 putchar(',');
 putchar(' ');
+}
 dig++;
 }
 putchar('\n');
