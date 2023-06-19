@@ -7,10 +7,15 @@
  */
 int main(void)
 }
-printf("Size of a char: %zu byte(s)\n", sizeof(char));
-printf("Size of an int: %zu byte(s)\n", sizeof(int));
-printf("Size of a long int: %zu byte(s)\n", sizeof(long));
-printf("Size of a long long int: %zu byte(s)\n", sizeof(long long));
-printf("Size of a float: %zu byte(s)\n", sizeof(float));
+int num1 = 4;
+float num2 = 4.5;
+char home = 'a';
+long long int num3 = 3.4;
+long int num4 = 4.6;
+printf("Size of a char: %zu byte(s)\n", sizeof(home));
+printf("Size of an int: %zu byte(s)\n", sizeof(num1));
+printf("Size of a long int: %zu byte(s)\n", sizeof(num4));
+printf("Size of a long long int: %zu byte(s)\n", sizeof(num3));
+printf("Size of a float: %zu byte(s)\n", sizeof(num2));
 return (0);
 }
