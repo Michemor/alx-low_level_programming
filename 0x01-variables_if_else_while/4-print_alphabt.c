@@ -7,14 +7,15 @@
 int main(void)
 {
 int lower = 97;
-int skipq = 113;
-int skipe = 101;
-while (lower <= 122)
+for (lower = 97; lower <= 122; lower++)
 {
-if (lower != skipe || lower != skipq)
+if (lower == 101 || lower == 113)
+{
+continue;
+}
+else
 {
 putchar(lower);
-lower++;
 }
 }
 putchar('\n');
