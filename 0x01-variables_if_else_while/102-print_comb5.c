@@ -6,34 +6,36 @@
  */
 int main(void)
 {
-int out1 = 48;
-int out2 = 48;
-int in1 = 48;
-int in2 = 49;
-while (out1 <= 57)
+int out1, out2, in1, in2;
+for (out1 = 49; out1 <= 57; out1++)
 {
-while (in1 <= 56)
+for (in1 = 49; in1 <= 57; in1++)
 {
-while (out2 <= 57)
+for (out2 = 49; out2 <= 57; out2++)
 {
-while (in2 <= 57)
+for (in2 = 48; in2 <=57; in2++)
+{
+if (in1 == in2 || out1 == out2)
+{
+continue;
+}
+else
 {
 putchar(out1);
 putchar(in1);
 putchar(' ');
 putchar(out2);
 putchar(in2);
+if (out1 != 57 || in1 != 56 || out2 != 57 || in2 != 57)
+{
 putchar(',');
-in2++;
+putchar(' ');
 }
-out2++;
 }
-in1++;
 }
-out1++;
+}
+}
 }
 putchar('\n');
 return (0);
 }
-
-
