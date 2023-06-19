@@ -15,12 +15,6 @@ for (out2 = 49; out2 <= 57; out2++)
 {
 for (in2 = 48; in2 <= 57; in2++)
 {
-if (in1 == in2 || out1 == out2)
-{
-continue;
-}
-else
-{
 putchar(out1);
 putchar(in1);
 putchar(' ');
@@ -30,7 +24,6 @@ if (out1 != 57 || in1 != 56 || out2 != 57 || in2 != 57)
 {
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
