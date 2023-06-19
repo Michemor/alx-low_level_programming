@@ -6,19 +6,26 @@
  */
 int main(void)
 {
-int out = 48;
-int in = 48;
-while(out <= 57)
+int out, in;
+for (out = 48; out <= 56; out++)
 {
-while (in <= 57)
+for (in = 49; in <= 57; in++)
+{
+if (out > in || out == in)
+{
+continue;
+}
+else
 {
 putchar(out);
 putchar(in);
+if (out != 56 || in != 57)
+{
 putchar(',');
 putchar(' ');
-in++;
 }
-out++;
+}
+}
 }
 putchar('\n');
 return (0);
