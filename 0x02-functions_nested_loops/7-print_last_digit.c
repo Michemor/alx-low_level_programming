@@ -13,7 +13,7 @@ int lastDig = val % 10;
 if (lastDig < 0)
 {
 _putchar(lastDig);
-return lastDig *= -1;
+return (lastDig *= 1);
 }
 else
 {
