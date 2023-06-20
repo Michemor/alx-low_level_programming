@@ -12,7 +12,14 @@ long int n = 2;
 long int sum = 0;
 for (count = 1; count <= 50; count++)
 {
+if (count != 50)
+{
 printf("%ld, ", m);
+}
+else
+{
+printf("%ld", m);
+}
 sum = m + n;
 m = n;
 n = sum;
