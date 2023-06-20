@@ -7,12 +7,12 @@
 int main(void)
 {
 int count;
-int m = 1;
-int n = 2;
-int sum = 0;
+long int m = 1;
+long int n = 2;
+long int sum = 0;
 for (count = 1; count <= 50; count++)
 {
-printf("%d, ",m);
+printf("%ld, ", m);
 sum = m + n;
 m = n;
 n = sum;
