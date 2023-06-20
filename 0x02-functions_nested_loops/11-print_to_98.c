@@ -1,31 +1,27 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 /**
- * print_to_98 - prints integers to 98
- * @n: starting point of count
+ * printt_to_98 - prints from m to 98
+ * @n: starting point of integer
  */
 void print_to_98(int n)
 {
-int m, i;
-m = abs(n);
-for(i = m; i <= 98; i++)
+int i;
+if (n <= 98 )
 {
-if(i <= 9)
+for(i = n; i <= 97; i++)
 {
-_putchar((i % 10) + '0');
+printf("%d, ",i);
+}
+printf("98\n");
 }
 else
 {
-_putchar((i / 10) + '0');
-_putchar((i % 10) + '0');
-}
-if (i != 98)
+for(i = n; i >= 97; i--)
 {
-_putchar(',');
-_putchar(' ');
+printf("%d, ",i);
+}
+printf("98\n");
 }
 }
-_putchar('\n');
-}
-
-
