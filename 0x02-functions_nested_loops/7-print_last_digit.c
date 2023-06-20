@@ -8,8 +8,14 @@
  */
 int print_last_digit(int j)
 {
-int newVal = abs(j);
 int lastDig = newVal % 10;
+if (lastDig < 0)
+{
+lastDig *= -1;
+}
+else
+{
 _putchar(lastDig + '0');
 return (lastDig);
+}
 }
