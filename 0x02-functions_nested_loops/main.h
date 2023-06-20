@@ -1,2 +1,3 @@
-int _putchar();
+#pragma once
+int _putchar(char);
 
