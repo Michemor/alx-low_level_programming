@@ -4,31 +4,31 @@
  */
 void times_table(void)
 {
-int count = 0;
-while (count <= 9)
+int count, prod, num;
+for(count = 0; count <= 9; count++)
 {
-int num = 0;
-while (num <= 9)
+for (num = 0; num <= 9; num++)
 {
-int prod = count * num;
+prod = count * num;
 if (prod <= 9)
 {
 _putchar(prod + '0');
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
 }
 else
 {
 _putchar((prod / 10) + '0');
 _putchar((prod % 10) + '0');
-}
 if (num != 9)
 {
 _putchar(',');
 _putchar(' ');
 }
-num++;
+}
 }
 _putchar('\n');
-count++;
 }
 }
 
