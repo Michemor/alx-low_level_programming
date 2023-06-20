@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - outputs fibonacci series starting from 1 and 2, less than *           4 000 000 and even numbered only
- *
+ * main - outputs fibonacci series for even numbers only
+ * :
  * Return: 0
  */
 int main(void)
@@ -10,9 +10,9 @@ long int m = 1;
 long int n = 2;
 long int sum = 0;
 int count;
-for (count = 1; count <= 100; count++)
+for (count = 1; count <= 1000; count++)
 {
-if (m < 4000000)
+if (m < 4000000 &&  m % 2 == 0)
 {
 printf("%ld, ", m);
 }
