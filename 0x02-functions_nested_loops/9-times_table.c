@@ -14,7 +14,7 @@ while (num <= 9)
 prod = count * num;
 _putchar((prod / 10) + '0');
 _putchar((prod % 10) + '0');
-if (count != 9)
+if (prod != 81)
 {
 _putchar(',');
 _putchar(' ');
