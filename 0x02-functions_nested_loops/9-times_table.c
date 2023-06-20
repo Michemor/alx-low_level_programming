@@ -8,20 +8,24 @@ int count = 0;
 while (count <= 9)
 {
 int num = 0;
-int prod;
 while (num <= 9)
 {
-prod = count * num;
+int prod = count * num;
+if (prod <= 9)
+{
+_putchar(prod + '0');
+}
+else
+{
 _putchar((prod / 10) + '0');
 _putchar((prod % 10) + '0');
-if (prod != 81)
-{
+}
 _putchar(',');
 _putchar(' ');
-}
 num++;
 }
 _putchar('\n');
 count++;
 }
 }
+
