@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - outputs fibonacci series
  *
@@ -6,17 +6,24 @@
  */
 int main(void)
 {
-int m = 1;
-int n = 2;
-int sum = 0;
+float m = 1;
+float n = 2;
+float sum = 0;
 int count;
 for (count = 1; count <= 98; count++)
 {
-_putchar(m + '0');
+if (count != 98)
+{
+printf("%.0f, ", m);
+}
+else
+{
+printf("%.0f", m);
+}
 sum = m + n;
 m = n;
 n = sum;
 }
-_putchar('\n');
+printf("\n");
 return (0);
 }
