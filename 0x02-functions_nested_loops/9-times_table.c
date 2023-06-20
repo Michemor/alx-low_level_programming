@@ -20,8 +20,11 @@ else
 _putchar((prod / 10) + '0');
 _putchar((prod % 10) + '0');
 }
+if (num != 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 num++;
 }
 _putchar('\n');
