@@ -5,29 +5,16 @@
  */
 void print_number(int n)
 {
-
-if (n > 9 || n <= 99)
+int num = n;
+if (num < 0)
 {
-_putchar((n / 10) + '0');
-_putchar((n % 10) + '0');
+num *= -1;
+_putchar(45);
 }
-else if (n > 99 || n <= 999)
+num /= 10;
+if (num != 0)
 {
-_putchar((n / 10) / 10 + '0');
-_putchar((n / 10) % 10 + '0');
-_putchar(n % 10 + '0');
+print_number(num);
 }
-else if (n > 999 || n <= 1999)
-{
-_putchar((n / 100) / 10 + '0');
-_putchar((n / 100) % 10 + '0');
-_putchar((n % 100) / 10 + '0');
-_putchar((n % 100) % 10 + '0');
+_putchar((num % 10) + '0');
 }
-else
-{
-_putchar(n + '0');
-}
-}
-
-
