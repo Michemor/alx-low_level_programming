@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * print-diagonal - prints digonal line
- * @n: number of spaces
+ *print-diagonal - prints digonal line
+ *@n: number of spaces
  */
 void print_diagonal(int n)
 {
-int i, s;
+int i;
+int s;
 if (n <= 0)
 {
 _putchar('\n');
