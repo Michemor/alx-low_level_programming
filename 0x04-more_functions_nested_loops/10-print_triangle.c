@@ -12,13 +12,13 @@ _putchar('\n');
 }
 else
 {
-for (m = 1; m <= size; m++)
+for (m = 0; m < size; m++)
 {
-for (space = size; space >= m; space--)
+for (space = size - m; space > 1; space--)
 {
 _putchar(32);
 }
-for (n = 1; n <= m; n++)
+for (n = 0; n <= m; n++)
 {
 _putchar(35);
 }
