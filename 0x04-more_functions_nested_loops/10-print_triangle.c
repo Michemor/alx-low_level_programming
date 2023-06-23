@@ -16,11 +16,11 @@ for (m = 1; m <= size; m++)
 {
 for (space = size; space >= m; space--)
 {
-_putchar(' ');
+_putchar(32);
 }
 for (n = 1; n <= m; n++)
 {
-_putchar('#');
+_putchar(35);
 }
 _putchar('\n');
 }
