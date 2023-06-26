@@ -20,7 +20,7 @@ for (i = 0; i <= len; i++)
 {
 if (i % 2 == 0)
 {
-puts(*(str + i));
+_putchar(*(str + i));
 }
 }
 _putchar('\n');
