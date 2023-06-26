@@ -10,7 +10,7 @@ int i, len;
 len = strlen(str);
 if (len == 0)
 {
-_putchar(92);
+_putchar(32);
 }
 else
 {
@@ -21,5 +21,6 @@ if (i % 2 == 0)
 _putchar(*(str + i));
 }
 }
+_putchar('\n');
 }
 }
