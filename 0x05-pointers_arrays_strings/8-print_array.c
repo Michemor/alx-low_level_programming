@@ -9,15 +9,7 @@ void print_array(int *a, int n)
 {
 int i;
 int size = n - 2;
-if (n <= 0)
-{
-printf(" \n");
-}
-else if (n == 1)
-{
-printf("%d\n", *a);
-}
-else
+if (n > 0)
 {
 for (i = 0; i <= size; i++)
 {
