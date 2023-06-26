@@ -8,17 +8,10 @@ void rev_string(char *s)
 {
 int i, temp;
 int slen = strlen(s);
-if (slen == 0)
-{
-s[0];
-}
-else
-{
 for (i = 0; i < slen / 2; i++)
 {
 temp = s[i];
 s[i] = s[slen - i - 1];
 s[slen - i - 1] = temp;
-}
 }
 }
