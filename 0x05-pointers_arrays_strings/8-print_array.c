@@ -13,6 +13,10 @@ if (n <= 0)
 {
 
 }
+else if (n == 1)
+{
+printf("%d\n", *a);
+}
 else
 {
 for (i = 0; i <= size; i++)
