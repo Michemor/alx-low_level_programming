@@ -9,7 +9,7 @@ void print_array(int *a, int n)
 {
 int i;
 int size = n - 2;
-if (size <= 0)
+if (n <= 0)
 {
 
 }
