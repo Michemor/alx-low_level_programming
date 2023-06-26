@@ -10,15 +10,15 @@ int i, temp;
 int slen = strlen(s);
 if (slen == 0)
 {
-_putchar(92);
+break;
 }
 else
 {
 for (i = 0; i < slen / 2; i++)
 {
 temp = s[i];
-s[i] = s[slen-i-1];
-s[slen-i-1] = temp;
+s[i] = s[slen - i - 1];
+s[slen - i - 1] = temp;
 }
 }
 }
