@@ -8,24 +8,12 @@
  */
 int _atoi(char *s)
 {
-int i = 0;
 int sign = 1;
-unsigned int fin = 0;
-while (*s++)
-{
-if(*s == '-')
+int fin;
+if (*s == '-')
 {
 sign *= -1;
 }
-else if (*s >= '0' && *s <= '9')
-{
-fin = (fin * 10) + *s - '0';
-}
-else if (fin > 0)
-{
-break;
-}
-i++;
-}
+fin =atoi(s);
 return (sign * fin);
 }
