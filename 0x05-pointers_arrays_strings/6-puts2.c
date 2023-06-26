@@ -9,11 +9,7 @@ void puts2(char *str)
 {
 int i, len;
 len = strlen(str) - 1;
-if (len <= 0)
-{
-_putchar(32);
-}
-else
+if (len > 0)
 {
 for (i = 0; i <= len; i++)
 {
