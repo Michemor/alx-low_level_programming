@@ -11,6 +11,7 @@ len = strlen(str);
 if (len == 0)
 {
 _putchar(32);
+_putchar('\n');
 }
 else
 {
