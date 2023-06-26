@@ -10,7 +10,7 @@ int i, temp;
 int slen = strlen(s);
 if (slen == 0)
 {
-break;
+s[0];
 }
 else
 {
