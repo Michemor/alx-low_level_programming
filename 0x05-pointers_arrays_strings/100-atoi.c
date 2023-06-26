@@ -8,12 +8,5 @@
  */
 int _atoi(char *s)
 {
-int sign = 1;
-int fin;
-if (*s == '-')
-{
-sign *= -1;
-}
-fin =atoi(s);
-return (sign * fin);
+return (atoi(s));
 }
