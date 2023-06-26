@@ -11,7 +11,7 @@ int i;
 int size = n - 2;
 if (n <= 0)
 {
-
+printf(" \n");
 }
 else if (n == 1)
 {
