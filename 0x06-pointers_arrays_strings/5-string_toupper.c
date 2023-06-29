@@ -3,9 +3,9 @@
 #include "main.h"
 /**
  * string_toupper - converts lowercase letters to uppercase
- * @let: string
+ * @let: string to be convertes to uppercase
  *
- * Returns: string with characters in uppercase
+ * Return: string with characters in uppercase
  */
 char *string_toupper(char *let)
 {
@@ -15,5 +15,5 @@ for (i = 0; i < len; i++)
 {
 let[i] = toupper(let[i]);
 }
- return (let);
+return (let);
 }
