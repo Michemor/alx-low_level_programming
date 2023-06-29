@@ -6,6 +6,8 @@
  * @n2: second operand
  * @r: buffer
  * @size_r: size of buffer r
+ *
+ * Return: r which is sum of n1 & n2
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
