@@ -13,36 +13,19 @@ int i;
 int len = strlen(str);
 for (i = 0; i < len; i++)
 {
-if (i == 0)
+if ((str[0]>= 'a') && (str[0] <= 'z'))
 {
-if ((str[i]>= 'a') && (str[i] <= 'z'))
-{
-str[i] = toupper(str[i]);
+str[0] = toupper(str[0]);
 continue;
 }
-}
-if (str[i] == ' ' || str[i] == '!' || str[i] == '?' ||  str[i] == '.')
+ if (str[i] == ' ' || str[i] == '!' || str[i] == '?' ||  str[i] == '.' 
+     || str[i] == '(' || str[i] == ')' || str[i] == '{' || str [i] == ';'
+     || str[i] == '\n' || str[i] == '"' || str[i] == ',' || str[i] == '\t'
+     || str[i] == '}'
+    )
 {
-i++;
+++i;
 if((str[i] >= 'a') && (str[i] <= 'z'))
-{
-str[i] = toupper(str[i]);
-continue;
-}
-}
-if (str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}' )
-{
-i++;
-if ((str[i] >= 'a' && str[i] <= 'z'))
-{
-str[i] = toupper(str[i]);
-continue;
-}
-}
-if (str[i] == ';' || str[i] == '\t' || str[i] == '\n' || str[i] == '"')
-{
-i++;
-if ((str[i] >= 'a') && (str[i] <= 'z'))
 {
 str[i] = toupper(str[i]);
 continue;

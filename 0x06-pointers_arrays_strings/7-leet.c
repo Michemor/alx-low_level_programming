@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * leet - encodes string with certain numbers
- * @str - string to be encoded
+ * @str: string to be encoded
  *
  * Return: encoded string
  */
