@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * _memset - prints b charcters n times in string s
  * @s: target string
@@ -9,9 +10,6 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-while (n-- != 0)
-{
-*s++ = b;
-}
+memset(s, b, n);
 return (s);
 }
