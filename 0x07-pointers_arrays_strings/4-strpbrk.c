@@ -14,7 +14,7 @@ for (search = s; *search != '\0'; search++)
 {
 if(strchr(accept, *search) != NULL)
 {
-return ((char *)search);
+return ((char *) search);
 }
 }
 return (NULL);
