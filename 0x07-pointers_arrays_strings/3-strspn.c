@@ -9,13 +9,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-char *m;
-for (m = s; *m != '\0'; m++)
-{
-if ((strchr(accept, *m)) == (NULL))
-{
-return (m - s);
-}
-}
-return (m - s);
+int m = strspn(s, accept);
+return (m);
 }
