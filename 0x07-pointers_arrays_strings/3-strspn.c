@@ -5,7 +5,7 @@
  *@s: target string
  *@accept: string containing pattern to be searched
  *
- *Return: number of characeters in s which consists of only characters contained in accept
+ *Return: interger value containing 1sr occurence of accept in s
  */
 unsigned int _strspn(char *s, char *accept)
 {
