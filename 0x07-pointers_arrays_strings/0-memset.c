@@ -7,14 +7,11 @@
  *
  * Return: string s
  */
-char *_memset(char *s, char b,unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int min = 0;
-while (min < n)
+while (n-- != 0)
 {
-*s = b;
-s++;
-min++;
+*s++ = b;
 }
-return s;
+return (s);
 }
