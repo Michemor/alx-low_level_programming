@@ -10,9 +10,5 @@
 char *_strpbrk(char *s, char *accept)
 {
 char *search = strpbrk(s, accept);
-if (search != NULL)
-{
-return ((char *)search);
-}
-return (NULL);
+return (search);
 }
