@@ -9,13 +9,10 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-char *search;
-for (search = s; *search != '\0'; search++)
-{
-if(strchr(accept, *search) != NULL)
+char *search = strpbrk(s, accept);
+if (search != NULL)
 {
 return ((char *) search);
-}
 }
 return (NULL);
 }
