@@ -29,10 +29,6 @@ return (strWild(s1, s2));
  */
 int strWild(char *s1, char *s2)
 {
-if (*s2 == "*")
-{
-return (1);
-}
 if(strcmp(s1, s2) > 0)
 {
 return (1);
