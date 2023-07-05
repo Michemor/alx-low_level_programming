@@ -22,13 +22,13 @@ return (helperFun(num, n));
  *
  * Return: the root of n if whole
  */
-int helperFun(int r,int sqr)
+int helperFun(int r, int sqr)
 {
-if ((r*r) == sqr)
+if ((r * r) == sqr)
 {
 return (r);
 }
-else if ((r*r) > sqr)
+else if ((r * r) > sqr)
 {
 return (-1);
 }
