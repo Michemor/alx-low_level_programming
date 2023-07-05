@@ -22,14 +22,14 @@ return (strWild(s1, s2));
 }
 /**
  * strWild - parses through string searching for wildcard combination
- * @str1: first string
- * @str2: second string
+ * @s1: first string
+ * @s2: second string
  *
  * Return: 1(if strings are equal) 0 (if not equal)
  */
 int strWild(char *s1, char *s2)
 {
-if(strcmp(s1, s2) > 0)
+if (strcmp(s1, s2) > 0)
 {
 return (1);
 }
