@@ -22,8 +22,6 @@ return (strWild(s1, s2));
 }
 /**
  * strWild - parses through string searching for wildcard combination
- * @len1: length of first string
- * @len2: length of second string
  * @str1: first string
  * @str2: second string
  *
@@ -31,11 +29,15 @@ return (strWild(s1, s2));
  */
 int strWild(char *s1, char *s2)
 {
-if(strcmp(s1,s2) > 0)
+if (*s2 == "*")
 {
 return (1);
 }
-else if(strcmp(s1,s2) == 0)
+if(strcmp(s1, s2) > 0)
+{
+return (1);
+}
+else if (strcmp(s1, s2) == 0)
 {
 return (1);
 }
