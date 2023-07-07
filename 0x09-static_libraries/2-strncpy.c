@@ -1,17 +1,15 @@
+#include <string.h>
 #include "main.h"
 /**
- * _strncpy - test function
- * @dest: arg
- * @src: args
- * @n: arg
+ * _strncpy - copies src to dest
+ * @dest: string to be copied to
+ * @src: string to be copied
+ * @n: number of characters to be copied
  *
- * Return: (dest)
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-(void)dest;
-(void)src;
-(void)n;
+strncpy(dest, src, n);
 return (dest);
-}
-
+} 

@@ -1,14 +1,14 @@
+#include <string.h>
 #include "main.h"
 /**
- * _strcpy - test function
- * @dest: args
- * @src: args
+ * *_strcpy - copies one string to another
+ * @dest: string to be copied to
+ * @src: the string from which is to be copied
  *
- * Return: string
+ * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-(void)dest;
-(void)src;
-return (dest);
+strcpy(dest, src);
+return (src);
 }

@@ -1,13 +1,14 @@
 #include "main.h"
+#include <string.h>
 /**
- * _strstr - test function
- * @s: argument
- * @c: argument
- * Return: 0
+ * _strchr - finds chaaracter c in given string
+ * @s: string to be scanned
+ * @c: character to be searched for
+ *
+ * Return: pointer to first occurence of c , if not returns NULL
  */
 char *_strchr(char *s, char c)
 {
-(void)s;
-(void)c;
-return (s);
-}
+char *m = strchr(s, c);
+return (m);
+} 

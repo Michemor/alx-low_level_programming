@@ -1,9 +1,10 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * _puts - test function
- * @s: arggs
+ * _puts - prints a given string
+ * @str: string to be printed
  */
-void _puts(char *s)
+void _puts(char *str)
 {
-(void)s;
+puts(str);
 }

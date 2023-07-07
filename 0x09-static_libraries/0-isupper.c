@@ -1,11 +1,20 @@
+#include <ctype.h>
 #include "main.h"
 /**
- * _isupper - test function for static libraries task
- * @c: to be converted to upper
+ * _isupper - checks for uppercase letters
+ * @c: character to be checked
  *
- * Return: c in uppercase
+ * Return: 1 (if is uppercase)
  */
 int _isupper(int c)
 {
-return (c);
+if (isupper(c))
+{
+return (1);
+}
+else
+{
+return (0);
+}
+return (0);
 }

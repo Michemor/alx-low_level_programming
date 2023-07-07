@@ -1,14 +1,18 @@
 #include "main.h"
+#include <string.h>
 /**
- * _strtstr - test function
- * @haystack: arg
- * @needle: arg
+ * _strstr - searches for first occurence of substring in string
+ * @haystack: string to be searched
+ * @needle: string being searched for
  *
- * Return: needle
+ * Return: pointer to beginning of located substring or NULL if not found
  */
 char *_strstr(char *haystack, char *needle)
 {
-(void)haystack;
-(void)needle;
-return (needle);
+char *hay = strstr(haystack, needle);
+if (hay == NULL)
+{
+return (NULL);
+}
+return (hay);
 }

@@ -1,15 +1,20 @@
+#include <ctype.h>
 #include "main.h"
 /**
- * _islower -test  functions
- * @s1: args
- * @s2: args
+ * _islower - check if charcter is lowercase alphabet
+ *@c: character to be checked
  *
- * Return: 1
+ * Return: 1 -if lowercase
+ *
  */
-int _strcmp(char *s1, char *s2)
+int _islower(int c)
 {
-(void)s1;
-(void)s2;
+if (islower(c))
+{
 return (1);
 }
-
+else
+{
+return (0);
+}
+}

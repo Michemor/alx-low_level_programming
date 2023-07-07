@@ -1,12 +1,19 @@
+#include <ctype.h>
 #include "main.h"
 /**
- * _isalpha - test function
- * @n: arg
+ * _isalpha - checks whether character is alphabet
+ * @c: character to be checked
  *
- * Return: 1
+ * Return: 1 -if c is letter,lowercase or uppercase
  */
-int _isalpha(int n)
+int _isalpha(int c)
 {
-(void)n;
+if (isalpha(c))
+{
 return (1);
+}
+else
+{
+return (0);
+}
 }

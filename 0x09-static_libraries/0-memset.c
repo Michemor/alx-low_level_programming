@@ -1,16 +1,15 @@
 #include "main.h"
+#include <string.h>
 /**
- * _memset - test for static libs task
- * @s: argument
- * @b: argument
- * @n: argument
+ * _memset - prints b charcters n times in string s
+ * @s: target string
+ * @b: character to be printed repeatedly
+ * @n: number of times character is to be printed
  *
- * Return: character
+ * Return: string s
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-(void)dest;
-(void)src;
-(void)n;
-return (dest);
-}
+memset(s, b, n);
+return (s);
+} 

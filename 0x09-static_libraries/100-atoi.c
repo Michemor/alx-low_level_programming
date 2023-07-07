@@ -1,11 +1,12 @@
+#include <stdlib.h>
 #include "main.h"
 /**
- * _atoi - converts int to string
- * @s: string
+ * _atoi - converts string to number
+ * @s: string to be converted
  *
- * Return: integer equivalent
+ * Return: int value found in s
  */
 int _atoi(char *s)
 {
-return (0);
+return (strtol(s, NULL, 10));
 }

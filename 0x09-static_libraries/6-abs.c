@@ -1,11 +1,12 @@
+#include <stdlib.h>
 #include "main.h"
 /**
- * _abs - test functions
- * @n: arg
+ * _abs - outputs the absolute value of an integer
+ * @i: integer whose absolute value is returned
  *
- * Return: n
+ * Return: i
  */
-int _abs(int n)
+int _abs(int i)
 {
-return (n);
+return (abs(i));
 }

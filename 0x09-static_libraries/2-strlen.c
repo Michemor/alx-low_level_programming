@@ -1,12 +1,12 @@
+#include <string.h>
 #include "main.h"
 /**
- * _strlen - test function
- * @s: argument
+ * _strlen - finds the length of a given string
+ * @s: the string whose length is to be found
  *
- * Return: 0
+ * Return: length of the string
  */
 int _strlen(char *s)
 {
-(void)s;
-return (0);
+return (strlen(s));
 }
