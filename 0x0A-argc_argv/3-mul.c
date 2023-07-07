@@ -5,17 +5,18 @@
  * @argc: number of arguments passed
  * @argv: argument vector
  *
- * Return: 1
+ * Return: 1 or  0
  */
 int main(int argc, char **argv)
 {
-int i, a, b, mult = 1;
-if (argc > 1 && argc < 4)
+int i;
+unsigned int a, b, mult = 1;
+if (argc > 1)
 {
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
-a = atoi(argv[1]);
-b = atoi(argv[2]);
+a = strtol(argv[1], NULL, 10);
+b = strtol(argv[2], NULL, 10);
 }
 mult = a * b;
 printf("%d\n", mult);
