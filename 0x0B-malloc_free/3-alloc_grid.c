@@ -16,6 +16,8 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
+else
+{
 grid = malloc(sizeof(int *) * height);
 if (grid == NULL)
 {
@@ -33,8 +35,9 @@ for (j = 0; j < width; j++)
 {
 grid[i][j] = j * 0;
 }
-putchar('\n');
+
 }
 return (grid);
+}
 }
 }
