@@ -15,7 +15,7 @@ return (NULL);
 }
 else
 {
-char *newStr = malloc(sizeof(*str));
+char *newStr = malloc(sizeof(*str + 1));
 if (newStr == NULL)
 {
 return (NULL);
@@ -25,6 +25,6 @@ else
 newStr = strdup(str);
 return (newStr);
 }
-free (newStr);
+free(newStr);
 }
 }
