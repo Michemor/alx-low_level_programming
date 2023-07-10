@@ -17,12 +17,19 @@ return (NULL);
 }
 else
 {
-newStr = malloc(sizeof(strlen(str) + 1));
+newStr = malloc(sizeof(char *) * (strlen(str) + 1));
+if (newStr == NULL)
+{
+return (NULL);
+}
+else
+{
 for (i = 0; i < strlen(str); i++)
 {
 *(newStr + i) = *(str + i);
 }
 return (newStr);
 free(newStr);
+}
 }
 }
