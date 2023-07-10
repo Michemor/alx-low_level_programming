@@ -14,7 +14,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-s = malloc(sizeof(strlen(str) + 1));
+s = (char *)malloc(sizeof(strlen(str) + 1));
 if (s != NULL)
 {
 strcpy(s, str);
