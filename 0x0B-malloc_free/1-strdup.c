@@ -15,7 +15,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-s = malloc(sizeof(*str) - 1);
+s = malloc(sizeof(*str));
 if (s != NULL)
 {
 for (i = 0; i < strlen(str); i++)
