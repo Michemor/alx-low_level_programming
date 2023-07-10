@@ -20,7 +20,7 @@ else
 ptr = malloc(sizeof(char) * size);
 if (ptr != NULL)
 {
-for(i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 *(ptr + i) = c;
 }
