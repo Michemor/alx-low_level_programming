@@ -9,15 +9,19 @@
  */
 char *_strdup(char *str)
 {
+unsigned int i;
 char *s;
 if (str == NULL)
 {
 return (NULL);
 }
-s = (char *)malloc(sizeof(strlen(str) + 1));
+s = malloc(sizeof(*str) - 1);
 if (s != NULL)
 {
-strcpy(s, str);
+for (i = 0; i < strlen(str); i++)
+{
+*(s + i) = *(str + i);
+}
 return (s);
 }
 else
