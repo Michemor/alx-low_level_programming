@@ -17,7 +17,7 @@ return (NULL);
 }
 else
 {
-newStr = (char *)malloc(sizeof(str));
+newStr = (char *)malloc(sizeof(*str));
 if (newStr == NULL)
 {
 return (NULL);
