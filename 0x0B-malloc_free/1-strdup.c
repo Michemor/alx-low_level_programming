@@ -15,14 +15,16 @@ return (NULL);
 }
 else
 {
-char *newStr = malloc(sizeof(*str));
+unsigned int len = strlen(str) + 1;
+char *newStr = malloc(sizeof(char *) * len);
 if (newStr == NULL)
 {
 return (NULL);
 }
 else
 {
-return (strdup(str));
+newStr = strdup(str);
+return (newStr);
 }
 free(newStr);
 }
