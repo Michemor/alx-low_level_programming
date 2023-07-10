@@ -9,23 +9,20 @@
  */
 char *_strdup(char *str)
 {
+char *newStr;
+unsigned int i;
 if (str == NULL)
 {
 return (NULL);
 }
 else
 {
-unsigned int len = strlen(str) + 1;
-char *newStr = malloc(sizeof(char *) * len);
-if (newStr == NULL)
+newStr = malloc(sizeof(strlen(str) + 1));
+for (i = 0; i < strlen(str); i++)
 {
-return (NULL);
+*(newStr + i) = *(str + i);
 }
-else
-{
-newStr = strdup(str);
 return (newStr);
-}
 free(newStr);
 }
 }
