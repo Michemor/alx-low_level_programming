@@ -25,5 +25,6 @@ else
 newStr = strdup(str);
 return (newStr);
 }
+free (newStr);
 }
 }
