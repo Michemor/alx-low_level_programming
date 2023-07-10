@@ -9,19 +9,16 @@
  */
 char *_strdup(char *str)
 {
-unsigned int i;
+unsigned int size = strlen(str);
 char *s;
 if (str == NULL)
 {
 return (NULL);
 }
-s = malloc(sizeof(*str));
+s = malloc(sizeof(char *) * size);
 if (s != NULL)
 {
-for (i = 0; i < strlen(str); i++)
-{
-*(s + i) = *(str + i);
-}
+s = strdup(str);
 return (s);
 }
 else
