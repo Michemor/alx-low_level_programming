@@ -14,11 +14,15 @@ char *str;
 str = malloc(sizeof(*s1) * sizeof(*s2));
 if (s1 == NULL)
 {
-return (s2);
+return (strcat(str, s2));
 }
 else if (s2 == NULL)
 {
-return (s1);
+return (strcat(str, s1));
+}
+else if (s1 == NULL && s2 == NULL)
+{
+return (strcat(str,s2));
 }
 else if (str != NULL)
 {
