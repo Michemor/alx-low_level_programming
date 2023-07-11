@@ -39,5 +39,9 @@ grid[i][j] = j * 0;
 }
 }
 return (grid);
+for (i = 0; i < height; i++)
+{
+free(grid[i]);
+}
 }
 }

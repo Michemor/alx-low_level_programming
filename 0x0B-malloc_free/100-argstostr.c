@@ -19,13 +19,13 @@ return (NULL);
 }
 else
 {
-str = malloc(sizeof(char *) * (ac + ac));
+str = malloc(sizeof(char *) * ((ac + ac) - 2));
 if (str == NULL)
 {
 return (NULL);
 }
 k = 0;
-for(i = 0; av[i]; i++)
+for (i = 0; av[i]; i++)
 {
 for (j = 0; av[i][j]; j++, k++)
 {
@@ -36,5 +36,5 @@ k++;
 }
 return (str);
 }
-free (str);
+free(str);
 }
