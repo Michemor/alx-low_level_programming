@@ -29,7 +29,7 @@ for (i = 0; s2[i]; i++)
 {
 len++;
 }
-str = malloc(sizeof(char) * len);
+str = malloc(sizeof(char) * (len + 1));
 if (str != NULL)
 {
 for (i = 0; s1[i]; i++)
