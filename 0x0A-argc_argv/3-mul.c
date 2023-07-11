@@ -18,7 +18,7 @@ for (i = 1; i < argc; i++)
 a = strtol(argv[1], NULL, 10);
 b = strtol(argv[2], NULL, 10);
 }
-mult = a * b;
+mult = a *b;
 printf("%d\n", mult);
 return (0);
 }
