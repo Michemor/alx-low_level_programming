@@ -46,4 +46,5 @@ else
 {
 return (NULL);
 }
+free(str);
 }

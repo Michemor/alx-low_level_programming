@@ -31,4 +31,5 @@ else
 return (NULL);
 }
 }
+free(ptr);
 }
