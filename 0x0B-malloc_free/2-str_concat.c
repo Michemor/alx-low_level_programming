@@ -14,20 +14,20 @@ char *str;
 str = malloc(sizeof(*s1) * sizeof(*s2));
 if (s1 == NULL)
 {
-return (strcat(str, s2));
+return (s2);
 }
 else if (s2 == NULL)
 {
-return (strcat(str, s1));
+return (s1);
 }
 else if (s1 == NULL && s2 == NULL)
 {
-return (strcat(str,s2));
+return (NULL);
 }
 else if (str != NULL)
 {
-str = strcat(str, s1);
-str = strcat(str, s2);
+strcpy(str, s1);
+strcat(str, s2);
 return (str);
 }
 else
