@@ -15,7 +15,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-s = malloc(sizeof(char) * len );
+s = malloc(sizeof(char *) * len );
 if (s != NULL)
 {
 return (strdup(str));
@@ -24,6 +24,5 @@ else
 {
 return (NULL);
 }
-free(strdup(str));
 free(s);
 }
