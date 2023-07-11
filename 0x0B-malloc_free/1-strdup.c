@@ -19,10 +19,10 @@ for (i = 0; str[i]; i++)
 {
 len++;
 }
-s = malloc(sizeof(char) * len);
+s = malloc(sizeof(char) * len + 1);
 if (s != NULL)
 {
-for(i = 0; str[i]; i++)
+for (i = 0; str[i]; i++)
 {
 s[j++] = str[i];
 }
