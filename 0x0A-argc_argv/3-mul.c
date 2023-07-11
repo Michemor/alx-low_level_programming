@@ -5,13 +5,13 @@
  * @argc: number of arguments passed
  * @argv: argument vector
  *
- * Return: 1 or  0
+ * Return: 1(if not successful) or  0(if successful)
  */
 int main(int argc, char **argv)
 {
 int i;
 unsigned int a, b, mult = 1;
-if (argc > 1)
+if (argc == 3)
 {
 for (i = 1; i < argc; i++)
 {
