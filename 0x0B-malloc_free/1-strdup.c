@@ -14,11 +14,10 @@ if (str == NULL)
 {
 return (NULL);
 }
-s = malloc(sizeof(strlen(str)));
+s = malloc(sizeof(char) * (strlen(str)));
 if (s != NULL)
 {
-strcpy(s, str);
-return (s);
+return (strdup(str));
 }
 else
 {
