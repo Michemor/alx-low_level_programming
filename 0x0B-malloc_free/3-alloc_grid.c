@@ -39,5 +39,4 @@ grid[i][j] = j * 0;
 return (grid);
 }
 }
-free(grid);
 }
