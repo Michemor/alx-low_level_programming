@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints change for given amount passed as argument 
+ * main - prints change for given amount passed as argument
  * @argc: argument count
  * @argv: argument vector
  *
