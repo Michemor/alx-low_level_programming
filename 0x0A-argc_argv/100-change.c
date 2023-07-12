@@ -9,52 +9,37 @@
  */
 int main(int argc, char **argv)
 {
-int i, cents, coins, change;
+int cents = 0, minCoins= 0;
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-else
+cents = atoi(argv[1]);
+while (cents > 0)
 {
-for (i = 0; i < argc; i++)
+if (cents >= 25)
 {
-coins = atoi(argv[1]);
+cents -= 25;
 }
-if (coins <= 0)
+else if (cents >= 10)
 {
-printf("0\n");
+cents -= 10;
 }
-if (coins == 1)
+else if (cents >= 5)
 {
-cents = 1;
-change = coins / cents;
-printf("%d\n", change);
+cents -= 5;
 }
-else if (coins >= 2 && coins <= 5)
+else if (cents >= 2)
 {
-cents = 2;
-change = coins / cents;
-printf("%d\n", change);
+cents -= 2;
 }
-else if (coins >= 6 && coins <= 9)
+else if (cents >= 1)
 {
-cents = 5;
-change = coins / cents;
-printf("%d\n", change);
+cents -= 1;
 }
-else if (coins >= 10 || coins  <= 99)
-{
-cents = 10;
-change = coins / cents;
-printf("%d\n", change);
+minCoins++;
 }
-else
-{
-cents = 25;
-change = coins / cents;
-printf("%d\n", change);
-}
-}
+printf("%d\n", minCoins);
 return (0);
 }
