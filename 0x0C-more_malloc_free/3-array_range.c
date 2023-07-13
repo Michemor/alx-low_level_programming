@@ -5,17 +5,17 @@
  * @min: least integer value
  * @max: greatest integer value
  *
- * Return: pointer to teh array of nums or NULL
+ * Return: pointer to the array of nums or NULL
  */
-int *array_range(unsigned int min, unsigned int max)
+int *array_range(int min, int max)
 {
-unsigned int i, size;
+int i, size;
 int *nums;
 if (min > max)
 {
 return (NULL);
 }
-size = max - min + 1;
+size = (max - min) + 1;
 nums = malloc(sizeof(int) * size);
 if (nums == NULL)
 {
@@ -25,7 +25,7 @@ else
 {
 for (i = 0; i < size; i++)
 {
-*(nums + i)= min;
+*(nums + i) = min;
 min++;
 }
 return (nums);
