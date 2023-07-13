@@ -22,5 +22,6 @@ return (NULL);
 else
 {
 return (memSize);
+free(memSize);
 }
 }

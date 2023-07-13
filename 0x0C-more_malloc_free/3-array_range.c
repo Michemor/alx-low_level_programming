@@ -16,16 +16,17 @@ if (min > max)
 return (NULL);
 }
 size = max - min + 1;
-nums = calloc(size, sizeof(int));
+nums = malloc(sizeof(int) * size);
 if (nums == NULL)
 {
 return (NULL);
 }
 else
 {
-for (i = min; i <= max; i++)
+for (i = 0; i < size; i++)
 {
-*(nums + i)= i;
+*(nums + i)= min;
+min++;
 }
 return (nums);
 free(nums);
