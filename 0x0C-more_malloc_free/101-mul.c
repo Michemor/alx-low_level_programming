@@ -15,7 +15,7 @@ int main(int ac, char **av)
 	int num1, num2, mul = 1;
 	num1 = strtol(av[1], NULL, 10);
 	num2 = strtol(av[2], NULL, 10);
-	if (ac != 3 )
+	if (ac != 3)
 	{
 		printf("Error\n");
 		exit (98);
