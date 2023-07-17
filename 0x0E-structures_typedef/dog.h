@@ -1,6 +1,4 @@
-#ifndef DOG_H
-#define DOG_H
-
+#pragma once
 /**
  * struct dog - information about a dog
  * @name: First member
@@ -18,4 +16,3 @@ struct dog
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
-#endif /* DOG_H */
