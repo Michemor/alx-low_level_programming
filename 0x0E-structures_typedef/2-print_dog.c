@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - prints contents of struct dog
  * @d: type dog
@@ -9,7 +10,10 @@ void print_dog(struct dog *d)
 {
 if (d == NULL)
 {
+exit(EXIT_FAILURE);
 }
+else
+{
 if ((d->name) == NULL)
 {
 	printf("Name: (nil)");
@@ -26,5 +30,6 @@ if (d->owner ==  NULL)
 else
 {
 	printf("Owner: %s\n", d->owner);
+}
 }
 }
