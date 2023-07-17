@@ -7,7 +7,7 @@
  * @s2: second string
  * @n: number of characters to be extracted
  *
- * Return: s3 or NULL 
+ * Return: new string or NULL 
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -38,15 +38,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = 0;
         for (i = 0; s1[i]; i++)
 	{
-         s3[i] = s1[i];
-	 len++;
+         s3[len++] = s1[i];
 	}
 	for (i = 0; s2[i] && i < n; i++)
 	{
-		s3[len] = s2[i];
-		len++;
+		s3[len++] = s2[i];
 	}
-	len = strlen(s3);
 	s3[len] = '\0';
 	return (s3);
 }
