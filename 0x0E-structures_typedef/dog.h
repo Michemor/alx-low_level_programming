@@ -1,11 +1,9 @@
 #pragma once
 /**
- * struct dog - information about a dog
- * @name: First member
- * @age: Second member
- * @owner: Third member
- * 
- * Description: longer description
+ *struct dog - information about a dog
+ *@name: First member
+ *@age: Second member
+ *@owner: Third member
  */
 struct dog
 {
