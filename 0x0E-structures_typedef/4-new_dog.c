@@ -66,7 +66,7 @@ char *_strcpy(char *dest, char *src)
          
         if (src == NULL)
 	{
-	return (NULL)
+	return (NULL);
 	}	
 	i = 0;
 	while (src[i])
