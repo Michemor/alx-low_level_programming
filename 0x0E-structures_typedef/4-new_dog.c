@@ -51,6 +51,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	return (max);
 	free(maxOwner);
 	free(maxName);
+	free(max->name);
+	free(max->owner);
 	free(max);
 }
 /**
