@@ -33,7 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
         
 	len = 0;
-	for(i = 0; owner[i]; i++)
+	for (i = 0; owner[i]; i++)
 	{
 		len++;
 	}
@@ -49,11 +49,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 	max->owner = _strcpy(maxOwner, owner);
 
 	return (max);
+	free(maxOwner);
+	free(maxName);
+	free(max);
 }
+/**
+ * _strcpy - copies dest string to src string
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: dest string
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i, len = 0;
-	
+         
+        if (src == NULL)
+	{
+	return (NULL)
+	}	
 	i = 0;
 	while (src[i])
 	{
