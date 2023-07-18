@@ -11,6 +11,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *max;
+
 	max = malloc(sizeof(dog_t));
 	if (max == NULL)
 	{
@@ -22,5 +23,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	max->age = age;
 	max->owner = owner;
 	return (max);
+	free(name);
+	free(owner);
+	free(max);
 	}
 }
