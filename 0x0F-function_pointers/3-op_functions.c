@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
 /**
  * op_add - adds the two operands
  * @a: first operand
@@ -52,7 +51,7 @@ int op_div(int a, int b)
  * op_mod - modulus of two numbers
  * @a: first operand
  * @b: second operand
- * 
+ *
  * Return a%b
  */
 int op_mod(int a, int b)
