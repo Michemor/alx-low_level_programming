@@ -9,8 +9,8 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
-
-        if (array != NULL || action != NULL)
+	size_t actSize = sizeof(array) / sizeof(int *);
+        if (array != NULL || action != NULL || size == actSize)
 	{
 	for (i = 0; i < size; i++)
 	{
