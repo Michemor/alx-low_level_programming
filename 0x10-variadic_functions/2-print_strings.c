@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 /**
  * print_strings - prints strings separated by character
- * @separacter: character to separate strings
+ * @separator: character to separate strings
  * @n: number of strings
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -13,8 +13,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list ap;
 
 	va_start(ap, n);
-	if (separator)
-	{
 	i = 0;
 	while (i < n)
 	{
@@ -27,13 +25,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 	printf("%s", str);
 	}
-	if (i != (n - 1))
+	if (i != (n - 1) && separator != NULL)
 	{
 	printf("%s", separator);
 	}
 	i++;
 	}
 	printf("\n");
-	}
 	va_end(ap);
 }
