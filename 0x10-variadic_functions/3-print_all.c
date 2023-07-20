@@ -68,6 +68,7 @@ void print_arg(char fmt, va_list ap)
 	if (str == NULL)
 	{
 	printf("(nil)");
+	return;
 	}
 	printf("%s", str);
 	break;
