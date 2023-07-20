@@ -13,8 +13,6 @@ void print_all(const char *const format, ...)
 	char *separator = ", ";
 	va_list ap;
 
-	if (format != NULL)
-	{
 	len = 0;
 	while (format[len])
 	{
@@ -36,7 +34,6 @@ void print_all(const char *const format, ...)
 	}
 	printf("\n");
 	va_end(ap);
-	}
 }
 
 /**
