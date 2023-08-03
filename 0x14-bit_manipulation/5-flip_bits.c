@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip_bits - flips the bits of n and m 
+ * flip_bits - flips the bits of n and m
  * @n: first integer
  * @m: second integer
  *

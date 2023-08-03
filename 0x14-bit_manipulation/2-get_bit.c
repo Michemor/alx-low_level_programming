@@ -10,7 +10,7 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	char bit_n;
-	
+
 	if (index > 32)
 		return (-1);
 

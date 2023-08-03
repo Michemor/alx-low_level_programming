@@ -4,7 +4,7 @@
  * clear_bit - clears bit (replaces it with 0) at a specific index
  * @n: integer
  * @index: position to be cleared
- * 
+ *
  * Return: 1 if successful or -1 if not
  */
 int clear_bit(unsigned long int *n, unsigned int index)
