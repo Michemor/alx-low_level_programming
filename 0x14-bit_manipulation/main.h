@@ -5,6 +5,5 @@
 #include <string.h>
 
 unsigned int binary_to_uint(const char *b);
-unsigned int pow_2(unsigned int);
 
 #endif /* MAIN_H */
