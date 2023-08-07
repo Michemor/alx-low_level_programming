@@ -28,9 +28,9 @@ int main(int ac, char **av)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 	exit(99);
 	}
-	else if (res == 100)
+	else if (res != 0)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't close fd -1\n");
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", res);
 	exit(100);
 	}
 
@@ -63,7 +63,6 @@ int copy_files(const char *file_f, const char *file_t)
 		close(finput);
 		return (99);
 	}
-
 	while ((chr = read(foutput, buf, SIZE)) > 0)
 	{
 	if (write(finput, buf, chr) != chr)
@@ -79,7 +78,10 @@ int copy_files(const char *file_f, const char *file_t)
 	close(foutput);
 		return (98);
 	}
-	if (close(foutput) == -1 || close(finput) == -1)
-		return (100);
+	if (close(foutput) == -1)
+		return (close(finput));
+
+	if (close(foutput) == -1)
+		return (close(foutput));
 	return (0);
 }
