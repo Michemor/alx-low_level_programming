@@ -30,7 +30,7 @@ int main(int ac, char **av)
 	}
 	else if (res == 100)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", res);
+	dprintf(STDERR_FILENO, "Error: Can't close fd -1\n");
 	exit(100);
 	}
 
