@@ -20,8 +20,12 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	charRead = strlen(text_content);
 	charWrite = write(out, text_content, charRead);
+
 	if (charWrite == -1)
+	{
+		close(out);
 		return (-1);
+	}
 
 	close(out);
 	return (1);
