@@ -28,7 +28,7 @@ int main(int ac, char **av)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 	exit(99);
 	}
-	else if (res != 0)
+	else if (res == 100)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", res);
 	exit(100);
