@@ -9,16 +9,18 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int out, charRead, charWrite;
+	int out, charRead = 0, charWrite;
 
-	if (filename == NULL || text_content == NULL)
+	if (filename == NULL)
 		return (-1);
 
 	out = open(filename, O_RDWR | O_APPEND);
 	if (out == -1)
 		return (-1);
 
-	charRead = strlen(text_content);
+	while (text_content[charRead] != '\0')
+		charRead++;
+
 	charWrite = write(out, text_content, charRead);
 
 	if (charWrite == -1)

@@ -78,10 +78,8 @@ int copy_files(const char *file_f, const char *file_t)
 	close(foutput);
 		return (98);
 	}
-	if (close(foutput) == -1)
-		return (close(finput));
+	if (close(foutput) == -1 || close(finput) == -1)
+		return (100);
 
-	if (close(foutput) == -1)
-		return (close(foutput));
 	return (0);
 }
