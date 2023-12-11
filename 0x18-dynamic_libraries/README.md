@@ -1,15 +1,14 @@
-# DYNAMIC LIBRARIES
+# Code injection: Win the Giga Millions!
 
-## Learning Objectives
+I bought a ticket for the Giga Millions and chose those numbers: 9, 8, 10, 24, 75 + 9. Can you make me win the Jackpot?
 
-1. What is a dynamic library, how does it work, how to create one, and how to use it    
-    - Dynamic libraries are shared libraries linked at run time
-2. What is the environment variable $LD_LIBRARY_PATH and how to use it 
-    - The path to your dynamic library is included in this variable
-3. What are the differences between static and shared libraries
-    - Static libraries are stored as object code and are included in the executable file of your programs after linking. 
-    - Dynamic libraries are instead stored in memory and during linking only the memory locatio to the dynamic library is included
-4. Basic usage nm, ldd, ldconfig
-   - nm         -   lists symbols used in object files
-   - ldd        -   lists dynamic dependencies of your program
-   - ldconfig   -   
+```
+/* Giga Millions program                                                                                    
+  * Players may pick six numbers from two separate pools of numbers:                                                
+  * - five different numbers from 1 to 75 and                                                                       
+  * - one number from 1 to 15                                                                                       
+  * You win the jackpot by matching all six winning numbers in a drawing.                                           
+  * Your chances to win the jackpot is 1 in 258,890,850                                                             
+  *                                                                                                                 
+  * usage: ./gm n1 n2 n3 n4 n5 bonus
+```
