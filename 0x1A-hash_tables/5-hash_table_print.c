@@ -10,7 +10,7 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i;
 	hash_node_t *temp;
 	/* flag to track the first item*/
-	int is_first = 1;
+	int is_first = 0;
 
 	if (ht == NULL)
 	{
@@ -21,17 +21,21 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
+	if (ht->array[i] != NULL)
+	{
+	if (is_first == 1)
+		printf(", ");
 	temp = ht->array[i];
 	while (temp)
 	{
-	if (!is_first)
-		printf(", ");
-	else
-		is_first = 0;
 	printf("'%s' : '%s'", temp->key, temp->value);
 	temp = temp->next;
+	if (temp != NULL)
+		printf(", ");
+	}
+	is_first = 1;
+	}
 	}
 	}
 	printf("}\n");
-	}
 }
