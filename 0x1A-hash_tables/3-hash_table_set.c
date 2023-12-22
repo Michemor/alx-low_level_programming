@@ -24,7 +24,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node, *temp;
 	char *key_val, *value_val;
 
-
 	key_val = (char *)key;
 	value_val = (char *)value;
 	if (key_val == NULL || ht == NULL || *key_val == '\0' || value == NULL)
