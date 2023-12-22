@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-
+#include <string.h>
 /**
  * hash_table_set - adds or updates the key/value pair
  * @ht: pointer to the table
@@ -40,22 +40,28 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	kindex = key_index((unsigned char *)key_val, ht->size);
 	if (ht->array[kindex] == NULL)
 	{
+	/* adds a new node since cell in array at kindex is empty */
 	ht->array[kindex] = node;
 	}
 	else
 	{
+	/* updates the value of an index */
 	temp = ht->array[kindex];
-	while (temp->next != NULL)
+	while (temp)
 	{
-	if (temp->key == node->key)
-	{
-	temp->value = node->value;
-	return (1);
-	}
+		if (strcmp(temp->key, key_val) == 0)
+		{
+		free(ht->array[kindex]->value);
+		ht->array[kindex]->value = node->value;
+		return (1);
+		}
+		else
+		{
+		node->next = ht->array[kindex];
+		ht->array[kindex] = node;
+		}
 	temp = temp->next;
 	}
-	node->next = ht->array[kindex];
-	ht->array[kindex] = node;
 	}
 	return (1);
 }
