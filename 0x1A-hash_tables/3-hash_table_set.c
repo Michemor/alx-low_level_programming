@@ -27,7 +27,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	key_val = (char *)key;
 	value_val = (char *)value;
-	if (key_val == NULL)
+	if (key_val == NULL || ht == NULL || key_val == '\0' || value == NULL)
 		return (0);
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
