@@ -1,0 +1,27 @@
+# Usage:
+# make -f 3-Makefile 	#compile all binary files
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = clean oclean fclean
+
+re: all
+
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME) 
+
+%.o:%.c
+	$(CC) -c -o $@ $<
+
+clean:
+	rm -f *~ school *.swp
+
+oclean:
+	rm -f *.o
+
+fclean:
+	rm -f *~ school *.swp
+	rm -f *.o
