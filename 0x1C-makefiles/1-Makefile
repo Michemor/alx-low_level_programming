@@ -1,0 +1,15 @@
+# Usage:
+# make		# compile files
+
+.PHONY = all clean
+
+CC = gcc
+SRC = $(wildcard *.c)
+
+all: school
+
+school: $(SRC)
+	$(CC) $(SRC) -o school
+
+clean:
+	rm *.o school
