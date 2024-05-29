@@ -1,12 +1,11 @@
 # Usage:
 # make		# compile files
-#clean		# deleted junk files
 
-.PHONY = all clean
+.PHONY = all
 
 CC = gcc
 
-SRC := $(wildcard *.c)
+SRC = $(wildcard *.c)
 
 all: school
 
