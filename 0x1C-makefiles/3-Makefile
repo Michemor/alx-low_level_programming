@@ -17,11 +17,11 @@ all: $(OBJ)
 	$(CC) -c -o $@ $<
 
 clean:
-	rm -f *~ school *.swp
+	rm -f *~ school
 
 oclean:
-	rm -f *.o
+	rm -f main.o school.o
 
 fclean:
-	rm -f *~ school *.swp
-	rm -f *.o
+	rm -f *~ school
+	rm -f main.o school.o
