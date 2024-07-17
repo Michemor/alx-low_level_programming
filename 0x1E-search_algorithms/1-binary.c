@@ -19,7 +19,7 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 
 	if (size == 1)
-		return (array[left]);
+		return (array[left_bound]);
 
 	while (left_bound != right_bound)
 	{
